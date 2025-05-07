@@ -1,2 +1,50 @@
-# Rolemaster-Companion-App
-Um programa para auxiliar aqueles que pretendem jogar Rolesmaster Fantasy Roleplaying
+Para o melhor uso e compreenção desse código/programa você precisa conhecer as regras do sistemas de RPG, Rolemaster Fantasy
+Roleplayig. 
+
+Se quiser simplesmente executar o Rolemaster Companion App, baixe a pasta de mesmo nome e seja feliz.
+
+Ainda, assim, aqui vai dicas sobre a intenção de funcionanlidade das funções. 
+
+* dadoAberto
+	pega um número de 1-100(um dado d100) e se o valor for de 1-5 ele entra em uma condição de erro crítico onde
+	mais u d100 é rolado com a mesma condição, sendo que esse novo número subtrai do valor total. O mesmo é feito 
+	quando cai 96-100 no dado, mas é tratado com um acerto crítico. 
+
+	Existem labels configuradas para mostrar uma mensagem em cada condição.
+
+* modDanoSofrido 
+	Nada mais é que uma razão comparativa, onde se existe 25%, 50%, 70%, ou a partir de 100% de diferença entre o hp 
+	corrente e o total, um modificador será gerado.
+
+* modCondicionais
+	Pega as checkbuttons marcadas, que refletem condições do persongem, e aplicam modificadores.
+
+* modIlumnacao
+	Também é um aplicador condicional de modificadores, desta vez verificando se a ilumiinação ajuda, ou atrapalha e 
+	a quantidade de luz/sombras no ambiente.
+
+* modDificuldade
+	Como em todo RPG existem diferentes dificuldades para testes. Em Rolemaster isso reflete impondo um modifiicador
+	que afeta o total somado em diversas perícas, rolagem, e no resultado final, que é comparado com um Threshold a 
+	ser alcançado. 
+
+	Isso supracitado é quando se aplica a uma manobra estática, porque quando for executada uma manobra de movimento, o 
+	papel da dificuldade está em ser uma matris de referência para resultados. Ex: Se você tirou x na rolagem total, na
+	difculdade x, o resultado é esse.
+
+* modCalculoExaustao
+	Funciona quase que exatamente como modDanosofrido, mas para comparar o cansaço daquele testado. 
+
+* resultadoManEstatica
+	É uma matris de resultados que pega o valor final e mostra ao jogador qual foi o resultado.
+
+* resultadoManMovimento
+	A mesma coisa que em rusltadoManEstatica, mas muito mais complexo e com variação de resultados.
+
+* resultado
+	Pega as entradas de dados e aplica em forma de modificadores, que irão somar ou subtrair no resultado do 
+	dado e depois serem cruuzados com outras funções. É bascamente o metodo principal. 
+
+
+O restante do programa se trata de configuração de janelas, do botão, e de labels, cosias mais compreensiveis 
+pra qualquer um que quiser usar, ou iterar no código. 
