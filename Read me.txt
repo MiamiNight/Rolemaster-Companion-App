@@ -1,6 +1,8 @@
 Para o melhor uso e compreenção desse código/programa você precisa conhecer as regras do sistemas de RPG, Rolemaster Fantasy
 Roleplayig. 
 
+Se quiser simplesmente executar o Rolemaster Companion App, baixe a pasta de mesmo nome e seja feliz.
+
 Ainda, assim, aqui vai dicas sobre a intenção de funcionanlidade das funções. 
 
 * dadoAberto
@@ -11,7 +13,8 @@ Ainda, assim, aqui vai dicas sobre a intenção de funcionanlidade das funções
 	Existem labels configuradas para mostrar uma mensagem em cada condição.
 
 * modDanoSofrido 
-	Nada mais é que uma razão comparativa, onde se existe 25%, 50%, 70%, ou a partir de 100% de diferença entre o hp 	corrente e o total, um modificador será gerado.
+	Nada mais é que uma razão comparativa, onde se existe 25%, 50%, 70%, ou a partir de 100% de diferença entre o hp 
+	corrente e o total, um modificador será gerado.
 
 * modCondicionais
 	Pega as checkbuttons marcadas, que refletem condições do persongem, e aplicam modificadores.
